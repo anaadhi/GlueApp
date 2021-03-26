@@ -71,7 +71,7 @@ function checkcookie(){
     }
   })
 
-// * ------------------------- hotkeys -------------------------
+// * ------------------------- copy -------------------------
 var old = ""
 function start() {
 
@@ -92,4 +92,8 @@ function start() {
   setTimeout(start, 2000);
 }
 
+// * ------------------------- paste -------------------------
   
+  socket.on('paste', (msg) => {
+    copyTextToClipboard(msg)
+  })
