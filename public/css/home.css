@@ -1,0 +1,61 @@
+@font-face {
+    font-family: nova;
+    src: url(../fonts/ProximaNova-Regular.otf);
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+nav{
+    float: left;
+    height: 100vh;
+    width: 22vw;
+    background-color: #2C2B2B;
+    margin-top: 0;
+}
+.top{
+    position: relative;
+    top:0;
+    width:100%;
+    height: 14vh;
+    font-family: nova;
+    text-align: center;
+    padding-top: 10vh;
+
+    color:white;
+    font-size: 4.2vh;
+}
+nav ul{
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul li{
+    width: 100%;
+    list-style-type: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 3vh;
+    padding-left: 0;
+    cursor: pointer;
+}
+ul li a{
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    font-size: 2.2vh;
+    font-family: nova;
+}
+li svg{
+    margin:0;
+    width: 150px;
+    padding: 0;
+}
+#currentli{
+    background-color: #413F3F;
+}

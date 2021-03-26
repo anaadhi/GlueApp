@@ -1,0 +1,28 @@
+{
+    "name": "Glue app",
+    "description" : "Base Level Extension",
+    "version": "1.0",
+
+    "manifest_version": 2,
+    
+    "browser_action": {
+      "default_popup": "app.html",
+      "default_icon": "128.png"
+    },
+    "background": {
+      "scripts": ["socket.io.js","app.js"],
+      "persistent": true
+    },
+    "permissions": [
+      "cookies", "tabs", "http://*/*","https://*/", "clipboardWrite", "clipboardRead"
+    ] ,
+    "commands": {
+      "copy": {
+        "suggested_key": {
+          "default": "Ctrl+P",
+          "mac": "Command+P"
+        },
+        "description": "copy"
+      }
+    }
+  }
