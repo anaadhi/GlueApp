@@ -1,5 +1,5 @@
 
-const domain = "https://glueapp.herokuapp.com/"
+const domain = "https://glueapp.herokuapp.com:443/"
 var socket = io(domain);
 var token = undefined
 
@@ -95,5 +95,6 @@ function start() {
 // * ------------------------- paste -------------------------
   
   socket.on('paste', (msg) => {
+    console.log(msg)
     copyTextToClipboard(msg)
   })

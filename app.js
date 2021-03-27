@@ -110,6 +110,7 @@ io.on('connection', (socket) => {
         jwt.verify(msg.jwt , process.env.TOKEN_SECRET, (err, user) => {
             paste = msg.content
             io.to(user.id).emit('paste', paste)
+            console.log(msg)
         })
     })
 
