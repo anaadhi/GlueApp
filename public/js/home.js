@@ -1,5 +1,5 @@
 
-var socket = io("http://localhost:3000");
+var socket = io("https://glueapp.herokuapp.com/");
 
 console.log("connected")
 

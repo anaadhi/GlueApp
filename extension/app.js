@@ -1,5 +1,5 @@
 
-const domain = "http://localhost:3000/"
+const domain = "https://glueapp.herokuapp.com/"
 var socket = io(domain);
 var token = undefined
 
